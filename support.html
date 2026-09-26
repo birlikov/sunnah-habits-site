@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — Sunnah Habits</title>
+    <meta
+      name="description"
+      content="Help with Sunnah Habits: prayer times, the Hijri date, reminders, backups, languages and sources."
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f8f6f1;
+        --text: #1a1c1a;
+        --muted: #55605a;
+        --line: #e2ddd2;
+        --link: #1f5c46;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #14161a;
+          --text: #eae7e0;
+          --muted: #a2aba5;
+          --line: #2c3138;
+          --link: #7fcba8;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 48px 16px 64px;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          17px/1.6 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      main {
+        max-width: 34rem;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+        margin: 0 0 1rem;
+        letter-spacing: -0.01em;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 2rem 0 0.5rem;
+      }
+      h3 {
+        font-size: 1rem;
+        margin: 1.5rem 0 0.35rem;
+      }
+      p,
+      li {
+        color: var(--muted);
+      }
+      p {
+        margin: 0 0 1rem;
+      }
+      ul {
+        margin: 0 0 1rem;
+        padding-left: 1.2rem;
+      }
+      li {
+        margin-bottom: 0.4rem;
+      }
+      a {
+        color: var(--link);
+      }
+      a:hover,
+      a:focus-visible {
+        text-decoration: underline;
+      }
+      nav.top {
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+      }
+      nav.top a {
+        text-decoration: none;
+        font-weight: 600;
+      }
+      footer {
+        margin-top: 2.5rem;
+        border-top: 1px solid var(--line);
+        padding-top: 1.25rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav class="top"><a href="./">← Sunnah Habits</a></nav>
+
+      <h1>Support</h1>
+
+      <p>
+        Write to <a href="mailto:birlikoff@gmail.com">birlikoff@gmail.com</a>. It helps to
+        say which iPhone and which iOS version you are on, what you expected, and what
+        happened instead. There is no account, so nothing you send needs to identify you.
+      </p>
+
+      <h2>Common questions</h2>
+
+      <h3>The prayer times are wrong</h3>
+      <p>
+        Times are computed on your phone, so the two inputs are the ones to check. Open
+        <strong>Settings → Prayer times</strong> and confirm the
+        <strong>calculation method</strong> matches the one your local mosque uses —
+        methods differ by several minutes, and by more for Fajr and Isha. Check the
+        <strong>madhab</strong> as well: Hanafi puts Asr later than Shafi, Maliki and
+        Hanbali. Then check the <strong>location</strong>; if it was skipped or read
+        loosely you can type coordinates by hand. If the method is right but the mosque
+        still differs by a fixed amount, use <strong>manual offsets</strong> to add or
+        subtract minutes per prayer.
+      </p>
+
+      <h3>The Hijri date is a day out</h3>
+      <p>
+        The app uses the Umm al-Qura calendar, which is calculated rather than sighted, so
+        it can differ by a day from a local moonsighting. Open
+        <strong>Settings → Calendar → Hijri date offset</strong> and shift it by −1 or +1.
+        Note also that the Hijri day turns at <strong>Maghrib</strong>, not midnight, as
+        the Islamic day does — so after sunset the app already shows tomorrow's Hijri
+        date.
+      </p>
+
+      <h3>Reminders are not arriving</h3>
+      <ul>
+        <li>
+          Check iOS <strong>Settings → Notifications → Sunnah Habits</strong> and make
+          sure notifications are allowed. If the permission was refused during onboarding,
+          the app honestly shows reminders as off rather than pretending.
+        </li>
+        <li>
+          Check <strong>Focus</strong> modes, including Sleep. A Focus that filters
+          notifications will hold a reminder back; allowing the app in that Focus fixes
+          it.
+        </li>
+        <li>
+          In the app, <strong>Settings → Reminders</strong> must show daily reminders on.
+          A reminder is only scheduled for a practice that is <em>active</em> and due that
+          day.
+        </li>
+        <li>
+          A practice anchored to a prayer needs a location. With no location the app
+          schedules nothing for it rather than inventing a time.
+        </li>
+        <li>
+          Reminders are built seven days ahead and rebuilt when you open the app. If the
+          app is not opened for over a week, they run out until it is.
+        </li>
+      </ul>
+
+      <h3>How do I back up or move my data</h3>
+      <p>
+        Open <strong>Settings → Export data</strong>. The app writes everything —
+        practices, completions, streaks, exemptions and settings — to a JSON file and
+        hands it to the share sheet, so you can save it to Files, iCloud Drive or send it
+        to yourself. There is no sync and no cloud copy; this file is the backup.
+        Importing it back is not available yet.
+        <strong>Settings → Delete all data</strong> clears everything and returns the app
+        to a fresh install.
+      </p>
+
+      <h3>Languages</h3>
+      <p>
+        The app is available in English, Russian, Kazakh, Turkish, Urdu and Arabic. By
+        default it follows your phone; <strong>Settings → Language</strong> overrides
+        that. Arabic and Urdu lay out right to left — after switching to or from one of
+        them, close and reopen the app so the direction takes effect. Digits are Western
+        (0–9) in every language.
+      </p>
+
+      <h3>Where the hadith come from, and the translations</h3>
+      <p>
+        Every practice in the app carries the hadith it rests on: the collection, the
+        hadith number and the grading, with a link that opens the full report on
+        sunnah.com in your browser. Nothing ships without a source.
+      </p>
+      <p>
+        The English text is the authored text. Hadith translations in Russian, Kazakh,
+        Turkish, Urdu and Arabic are <strong>machine translated from the English</strong>
+        and are marked as such in the app wherever they appear. The Arabic of the hadith
+        is always shown, so the original is there to read. If you find a translation that
+        misreads the Arabic, please write to us — corrections are welcome.
+      </p>
+
+      <footer><a href="privacy">Privacy Policy</a></footer>
+    </main>
+  </body>
+</html>
